@@ -1,0 +1,49 @@
+{
+  "name": "meeti",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "desarrollo": "concurrently \"npm run dev\" \"npm run watch\"",
+    "dev": "nodemon ./index",
+    "start": "node ./index.js",
+    "watch": "webpack watch --mode development"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.17.5",
+    "@babel/preset-env": "^7.16.11",
+    "babel-loader": "^8.2.3",
+    "nodemon": "^2.0.15",
+    "webpack": "^5.69.1",
+    "webpack-cli": "^4.9.2"
+  },
+  "dependencies": {
+    "axios": "^0.26.1",
+    "bcrypt-nodejs": "^0.0.3",
+    "body-parser": "^1.19.2",
+    "concurrently": "^7.0.0",
+    "connect-flash": "^0.1.1",
+    "cookie-parser": "^1.4.6",
+    "dotenv": "^16.0.0",
+    "ejs": "^2.6.1",
+    "express": "^4.17.3",
+    "express-ejs-layouts": "^2.5.1",
+    "express-session": "^1.17.2",
+    "express-validator": "^5.3.0",
+    "leaflet-geosearch": "^2.7.0",
+    "moment": "^2.29.1",
+    "multer": "^1.4.4",
+    "nodemailer": "^6.7.2",
+    "passport": "^0.5.2",
+    "passport-local": "^1.0.0",
+    "pg": "^8.7.3",
+    "sequelize": "^5.1.0",
+    "shortid": "^2.2.16",
+    "slug": "^5.2.0",
+    "sweetalert2": "^11.4.6",
+    "uuid": "^3.3.2"
+  }
+}
